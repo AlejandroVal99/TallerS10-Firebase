@@ -1,0 +1,22 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+}
+div.BlockOne{
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+    
+}
+div.BlockOne *{
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    padding: 8px 8px 8px 8px;
+}
+#TitleF1{
+    text-align: center;
+}
