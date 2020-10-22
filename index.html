@@ -3,24 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="CSS/index.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
 
     <title>Elecciones 2022</title>
 </head>
 <body>
-    <div class="BlockOne" >
-        
-        <h1 id = "TitleF1">Inscribir Candidato</h1>
-        <input class = "IdCandidato" placeholder="Id del Candidato" type="text">
-        <input class = "NameCandidato" placeholder="Id del Candidato" type="text">
-        <button class = "SendCandidato">Inscribir Candidato</button>
-        <h1 id = "TitleF1" >Votar por tu Candidato</h1>
-        <input class = "vote" placeholder="Id del Candidato" type="text">
-
-    </div>
-   
+    <div class = "container">
+        <div class= "sideButtons">
+            <button class = "buttons_side" id = "lookCandi">Ver candidatos</button>
+            <br><br><br>
+            <button class = "buttons_side" id = "lookVotes">Ver votos</button>
+        </div>
+        <div class="BlockOne" >
+            
+            <h1 id = "TitleF1">Inscribir Candidato</h1>
+            <input id = "nameCandidato" placeholder="Nombre del Candidato" type="text">
+            <input id = "IdCandidato" placeholder="Id del Candidato" type="text">
+            <button class = "buttons" id = "sendCandidato">Inscribir Candidato</button>
+            <h1 id = "TitleF1" >Votar por tu Candidato</h1>
+            <input id = "idVote" placeholder="Id del Candidato" type="text">
+            <button class = "buttons" id = "votarCandidato">Votar</button>
     
-
+        </div>
+    </div>
 </body>
 </html>
-<script src="JS/index.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
+<script>
+    
+    var firebaseConfig = {
+      apiKey: "AIzaSyBAhoNKXKAk7D56z2uJ1Udp1AlOYvFMbrk",
+      authDomain: "elecciones2022-eco.firebaseapp.com",
+      databaseURL: "https://elecciones2022-eco.firebaseio.com",
+      projectId: "elecciones2022-eco",
+      storageBucket: "elecciones2022-eco.appspot.com",
+      messagingSenderId: "638677194593",
+      appId: "1:638677194593:web:cbb6baefe27b1f10af9720",
+      measurementId: "G-NEFQ489WHG"
+    };
+   
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="js/index.js"></script>
